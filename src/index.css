@@ -1,13 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  background: black;
+  background: radial-gradient(
+    /* 45deg, */ rgb(11, 0, 47) 20%,
+    rgb(6, 0, 28) 50%,
+    rgb(0, 0, 0) 60%
+  );
+  background-size: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: aliceblue;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px black;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  padding: 50px;
+  background-color: rgba(36, 35, 46, 0.317);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: rgb(8, 8, 64);
+}
+button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: inset 5px 5px 15px black;
+  color: white;
+  font-weight: bolder;
+  font-size: 1em;
+  background-color: rgb(41, 86, 169);
+}
+h1,
+h3 {
+  margin: 10px auto;
+  text-align: center;
+  font-size: 3rem;
+  -webkit-text-stroke: 2px rgb(213, 44, 47);
+}
+h1 {
+  letter-spacing: 10px;
+}
+button:hover {
+  box-shadow: 5px 5px 15px black;
+}
+.set {
+  background-color: rgb(31, 160, 87);
+}
+.stop {
+  background-color: rgb(213, 44, 47);
+}
+.weight {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10%;
+  margin: 10px auto;
+  background-color: rgb(213, 44, 47);
+}
+.kg {
+  background-color: rgb(41, 86, 169);
+}
+.ounces {
+  background-color: rgb(31, 160, 87);
 }

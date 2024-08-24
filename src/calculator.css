@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  background: black;
+  background: linear-gradient(
+      45deg,
+      rgb(13, 0, 10),
+      rgb(71, 1, 51),
+      rgba(0, 0, 0, 0)
+    ),
+    radial-gradient(
+      circle at 5% 50%,
+      rgb(45, 200, 235) 35%,
+      rgb(1, 80, 108) 35% 70%,
+      rgb(140, 26, 169) 70%
+    );
+  background-size: 5px 5px, 50px 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: aliceblue;
+  font-family: monospace;
+}
+.calculator {
+  background: linear-gradient(
+    45deg,
+    rgb(250, 200, 218),
+    rgb(148, 46, 76),
+    rgb(177, 161, 179)
+  );
+  border-radius: 10px;
+  padding: 20px;
+}
+.display {
+  width: 100%;
+  min-width: 400px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.574);
+  color: black;
+  margin: 20px auto;
+  font-size: 2rem;
+}
+button {
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(95, 84, 84);
+  color: white;
+  cursor: pointer;
+  padding-left: 10px;
+  font-size: 1.5rem;
+}
+button:hover {
+  filter: brightness(190%);
+}
+.operators {
+  display: flex;
+}
+.operators button {
+  flex: 1 1 0%;
+  background-color: rgb(213, 2, 104);
+  font-weight: bolder;
+}
+.digits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.numbers {
+  grid-column: 1fr;
+  width: 100%;
+  background-color: rgb(115, 1, 50);
+}
